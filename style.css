@@ -1,7 +1,7 @@
 /*
 Theme Name: Minimer
 Theme URI: http://alx.media/themes/minimer/
-Version: 1.0.2
+Version: 1.0.3
 Description: <a href="http://alx.media/themes/minimer/">Minimer</a> is a flexible personal blog theme with plenty of options. Optimized for all devices, this theme will stand out with a unique slanted sidebar including profile image, name and description. It also includes a featured posts carousel that can be enabled. Set the theme to any width and boxed style if you so wish. Use a sidebar to the left or right, set it to any color you want, or disable it entirely for a more clean look.
 Author: Alexander Agnarson
 Author URI: http://alx.media
@@ -192,9 +192,17 @@ input, textarea, button, select, label { font-family: inherit; }
 .themeform select:focus,
 .themeform textarea:focus { border-color: #ddd; color: #333; -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.1); box-shadow: 0 0 3px rgba(0,0,0,0.1); }
 .themeform label .required { color: #333; }
+.themeform input[type="button"],
+.themeform input[type="reset"],
 .themeform input[type="submit"],
+.themeform button[type="button"],
+.themeform button[type="reset"],
 .themeform button[type="submit"] { background: #333; color: #fff; padding: 8px 14px; font-weight: 600; display: inline-block; border: none; cursor: pointer; -webkit-border-radius: 3px; border-radius: 3px; }
+.themeform input[type="button"]:hover,
+.themeform input[type="reset"]:hover,
 .themeform input[type="submit"]:hover,
+.themeform button[type="button"]:hover,
+.themeform button[type="reset"]:hover,
 .themeform button[type="submit"]:hover { background: #333; }
 
 .themeform.searchform div { position: relative; }
@@ -249,7 +257,7 @@ input, textarea, button, select, label { font-family: inherit; }
 .entry .wp-caption img { margin: 0; max-width: 100%; height: auto; }
 .entry .wp-caption.alignleft { margin-right: 20px; }
 .entry .wp-caption.alignright { margin-left: 20px; }
-.entry .wp-caption.alignnone { width: 100%!important; overflow: hidden; }
+.entry .wp-caption.alignnone { overflow: hidden; }
 .entry .wp-caption.alignnone img { margin: 0 auto; max-width: 100%!important; }
 .entry .wp-caption-text { color: #999; font-size: 13px; padding: 0 0 8px 0; margin: 0; }
 
