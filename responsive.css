@@ -133,6 +133,7 @@
 	
 	/* blog */
 	.featured-post { bottom: 0; }
+	.featured-post-title { font-size: 14px; }
 	.slick-posts { margin-top: 0; }
 	article.post { margin-bottom: 20px; }
 	.entry-header { margin-bottom: 20px; }

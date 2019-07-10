@@ -225,7 +225,7 @@ jQuery(document).ready(function($) {
 		  settings: {
 			arrows: true,
 			centerMode: true,
-			centerPadding: '0',
+			centerPadding: '40px',
 			slidesToShow: 2
 		  }
 		},
@@ -234,7 +234,7 @@ jQuery(document).ready(function($) {
 		  settings: {
 			arrows: true,
 			centerMode: true,
-			centerPadding: '0',
+			centerPadding: '40px',
 			slidesToShow: 1
 		  }
 		}
