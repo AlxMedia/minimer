@@ -1,7 +1,7 @@
 /*
 Theme Name: Minimer
 Theme URI: http://alx.media/themes/minimer/
-Version: 1.0.4
+Version: 1.0.5
 Description: <a href="http://alx.media/themes/minimer/">Minimer</a> is a flexible personal blog theme with plenty of options. Optimized for all devices, this theme will stand out with a unique slanted sidebar including profile image, name and description. It also includes a featured posts carousel that can be enabled. Set the theme to any width and boxed style if you so wish. Use a sidebar to the left or right, set it to any color you want, or disable it entirely for a more clean look.
 Author: Alexander Agnarson
 Author URI: http://alx.media
@@ -64,7 +64,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 /* ------------------------------------------------------------------------- *
  *  Base Styles
 /* ------------------------------------------------------------------------- */
-body { background: #eee; font-size: 15px; line-height: 1.5em; color: #555; font-weight: 300; }
+body { background: #eee; font-size: 15px; line-height: 1.5em; color: #444; font-weight: 300; }
 ::selection { background: #eee; color: #333; }
 ::-moz-selection { background: #eee; color: #333; }
 a { color: #333; text-decoration: none; outline: 0; }
@@ -79,7 +79,7 @@ strong { font-weight: 600; }
 .left,.alignleft { float: left; }
 .right,.alignright { float: right; }
 .aligncenter { margin-left: auto; margin-right: auto; }
-hr { border: 0; background: #eee; height: 1px; margin: 30px 0; }
+hr { border: 0; background: #eee; height: 1px; margin: 40px 0; }
 
 /*  base : clear
 /* ------------------------------------ */
@@ -211,6 +211,8 @@ input, textarea, button, select, label { font-family: inherit; }
 
 /*  base : entry
 /* ------------------------------------ */
+.entry a { color: #000; box-shadow: 0 1px 0 #999; }
+.entry a:hover { box-shadow: 0 1px 0 #000; }
 .entry { font-size: 19px; line-height: 1.6em; }
 .entry p,
 .entry dd { margin-bottom: 1em; }
@@ -229,7 +231,7 @@ input, textarea, button, select, label { font-family: inherit; }
 .entry dt { font-weight: 600;}
 .entry address { margin-bottom: 1em; }
 .entry blockquote { position: relative; color: #777; font-style: italic; margin: 0 0 20px 0; padding-left: 50px; }
-.entry blockquote p { margin-bottom: 0.75em; }
+.entry blockquote p { font-weight: 400; color: #444; margin-bottom: 0.75em; }
 .entry blockquote:before { content: "\f10d"; color: #ccc; font-size: 32px; font-style: normal; font-family: FontAwesome; text-align: center; position: absolute; left: 0; top: 0; }
 .entry blockquote.twitter-tweet:before { content: "\f099"; }
 .entry code, .entry pre { font-family: Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace; font-size: 11px; }
@@ -295,6 +297,24 @@ transition: all .2s ease;
 .widget .gallery-columns-8 .gallery-caption,
 .widget .gallery-columns-9 .gallery-caption { display: none!important; }
 
+/*  base : blocks
+/* ------------------------------------ */
+.entry .wp-block-latest-comments { margin-left: 0; }
+.entry .wp-block-gallery { margin-left: 0; }
+.entry .wp-block-gallery.alignwide {  }
+.entry .wp-block-gallery.alignfull {  }
+.entry .wp-block-gallery .blocks-gallery-item figcaption { box-sizing: border-box; }
+.entry .wp-block-pullquote { font-weight: 400; padding: 0; margin-top: 1em; margin-bottom: 1em; }
+.entry .wp-block-pullquote.alignleft { margin-right: 2em; }
+.entry .wp-block-pullquote.alignright { margin-left: 2em; }
+.entry .wp-block-pullquote blockquote { padding-left: 0; text-align: left; }
+.entry .wp-block-pullquote blockquote:before { display: none; }
+.entry .wp-block-pullquote blockquote p { color: #444; }
+.entry .wp-block-code code { background: none; }
+.entry .wp-block-button a { color: #fff; }
+.entry .wp-block-file a.wp-block-file__button { color: #fff; }
+.entry .has-large-font-size { line-height: 1.1em; }
+
 /*  base : headings
 /* ------------------------------------ */
 h1, h2, h3, h4, h5, h6 { color: #333; font-weight: 300; -ms-word-wrap: break-word; word-wrap: break-word; }
@@ -305,7 +325,7 @@ h1, h2, h3, h4, h5, h6 { color: #333; font-weight: 300; -ms-word-wrap: break-wor
 .entry h3 { font-size: 28px; letter-spacing: -0.5px; }
 .entry h4 { font-size: 24px; letter-spacing: -0.3px; }
 .entry h5 { font-size: 20px; font-weight: 600; }
-.entry h6 { font-size: 18px; font-weight: 600; text-transform: uppercase; }
+.entry h6 { font-size: 16px; font-weight: 600; text-transform: uppercase; }
 
 .heading,
 #reply-title { font-weight: normal; font-size: 18px; font-weight: 600; margin-bottom: 1em; }
@@ -845,8 +865,6 @@ article.post { margin-bottom: 60px; }
 .entry-header .entry-meta .entry-comments:hover span { color: #666; }
 .entry-media { max-width: 940px; margin-bottom: 40px; }
 .entry-content {  }
-.entry-content .entry a { color: #000; box-shadow: 0 1px 0 #999; }
-.entry-content .entry a:hover { box-shadow: 0 1px 0 #000; }
 .entry-footer { margin-top: 40px; margin-bottom: 40px; }
 
 .entry-bar { -webkit-transition: all 0.25s ease-in-out; transition: all 0.25s ease-in-out; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
