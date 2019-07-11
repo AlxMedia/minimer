@@ -213,7 +213,7 @@ Kirki::add_field( 'minimer_theme', array(
 	'label'			=> esc_html__( 'Single - Post Navigation', 'minimer' ),
 	'description'	=> esc_html__( 'Shows links to the next and previous article', 'minimer' ),
 	'section'		=> 'blog',
-	'default'		=> 's1',
+	'default'		=> 'content',
 	'choices'		=> array(
 		'disable'	=> esc_html__( 'Disable', 'minimer' ),
 		'content'	=> esc_html__( 'Below content', 'minimer' ),
@@ -645,6 +645,34 @@ Kirki::add_field( 'minimer_theme', array(
 		'step'	=> '1',
 	),
 ) );
+// Styling: Content Max-width
+Kirki::add_field( 'minimer_theme', array(
+	'type'			=> 'slider',
+	'settings'		=> 'content-width',
+	'label'			=> esc_html__( 'Content Max-width', 'minimer' ),
+	'description'	=> esc_html__( 'Max-width of the website content', 'minimer' ),
+	'section'		=> 'styling',
+	'default'		=> '740',
+	'choices'     => array(
+		'min'	=> '500',
+		'max'	=> '1920',
+		'step'	=> '1',
+	),
+) );
+// Styling: Content Media Max-width
+Kirki::add_field( 'minimer_theme', array(
+	'type'			=> 'slider',
+	'settings'		=> 'content-media-width',
+	'label'			=> esc_html__( 'Content Media Max-width', 'minimer' ),
+	'description'	=> esc_html__( 'Max-width of the content media', 'minimer' ),
+	'section'		=> 'styling',
+	'default'		=> '940',
+	'choices'     => array(
+		'min'	=> '500',
+		'max'	=> '1920',
+		'step'	=> '1',
+	),
+) );
 // Styling: Sidebar Color
 Kirki::add_field( 'minimer_theme', array(
 	'type'			=> 'color',
@@ -666,6 +694,22 @@ Kirki::add_field( 'minimer_theme', array(
 	'type'			=> 'color',
 	'settings'		=> 'color-comment-bubble',
 	'label'			=> esc_html__( 'Comment Bubble Color', 'minimer' ),
+	'section'		=> 'styling',
+	'default'		=> '#eeeeee',
+) );
+// Styling: Category Label
+Kirki::add_field( 'minimer_theme', array(
+	'type'			=> 'color',
+	'settings'		=> 'color-category',
+	'label'			=> esc_html__( 'Category Label Color', 'minimer' ),
+	'section'		=> 'styling',
+	'default'		=> '#eeeeee',
+) );
+// Styling: Footer Color
+Kirki::add_field( 'minimer_theme', array(
+	'type'			=> 'color',
+	'settings'		=> 'color-footer',
+	'label'			=> esc_html__( 'Footer Color', 'minimer' ),
 	'section'		=> 'styling',
 	'default'		=> '#eeeeee',
 ) );

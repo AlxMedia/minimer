@@ -101,7 +101,23 @@ if ( ! function_exists( 'minimer_dynamic_css' ) ) {
 					$styles .= '.full-width #wrapper { max-width: '.esc_attr( get_theme_mod('container-width') ).'px; }'."\n";
 				}
 			}
-			
+			// content max-width
+			if ( get_theme_mod('content-width','740') != '740' ) {
+				$styles .= '
+.entry-header,
+.entry-content,
+.entry-footer,
+.pagination,
+.page-title,
+.front-widgets { max-width: '.esc_attr( get_theme_mod('content-width') ).'px; }
+				'."\n";
+			}
+			// content media max-width
+			if ( get_theme_mod('content-media-width','940') != '940' ) {
+				$styles .= '
+.entry-media { max-width: '.esc_attr( get_theme_mod('content-media-width') ).'px; }
+				'."\n";
+			}
 			// sidebar color
 			if ( get_theme_mod('color-sidebar','#333333') != '#333333' ) {
 				$styles .= '
@@ -122,7 +138,7 @@ if ( ! function_exists( 'minimer_dynamic_css' ) ) {
 			if ( get_theme_mod('logo-max-height','60') != '60' ) {
 				$styles .= '.site-title a img { max-height: '.esc_attr( get_theme_mod('logo-max-height') ).'px; }'."\n";
 			}
-			// comment count color
+			// comment bubble color
 			if ( get_theme_mod('color-comment-bubble','#eeeeee') != '#eeeeee' ) {
 				$styles .= '
 .featured-post-comments,
@@ -130,7 +146,27 @@ if ( ! function_exists( 'minimer_dynamic_css' ) ) {
 .featured-post-comments span,
 .entry-header .entry-meta .entry-comments span { color: #fff; }
 				'."\n";
-			}	
+			}
+			// category color
+			if ( get_theme_mod('color-category','#eeeeee') != '#eeeeee' ) {
+				$styles .= '
+.entry-header .entry-meta .entry-category a { background: '.esc_attr( get_theme_mod('color-category') ).'; color: rgba(255,255,255,0.8); }
+				'."\n";
+			}
+			// footer color
+			if ( get_theme_mod('color-footer','#eeeeee') != '#eeeeee' ) {
+				$styles .= '
+#footer { background: '.esc_attr( get_theme_mod('color-footer') ).'; }
+#footer-bottom a { color: #fff; }
+#footer-bottom a:hover { color: rgba(255,255,255,0.8); }
+#footer-bottom #copyright, 
+#footer-bottom #credit { color: rgba(255,255,255,0.7); }
+#footer-bottom .social-links a { color: rgba(255,255,255,0.7); }
+#footer-bottom .social-links a:hover { color: #fff; }
+#footer-bottom .social-links .social-tooltip:hover:after { background: #fff; color: #666; }
+#footer-bottom .social-links .social-tooltip:hover:before { border-color: #fff transparent; }
+				'."\n";
+			}
 			// header text color
 			if ( get_theme_mod( 'header_textcolor' ) != '' ) {
 				$styles .= '.site-title a, .site-description { color: #'.esc_attr( get_theme_mod( 'header_textcolor' ) ).'; }'."\n";

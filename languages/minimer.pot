@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Minimer\n"
-"POT-Creation-Date: 2019-07-07 21:53+0200\n"
+"POT-Creation-Date: 2019-07-11 18:38+0200\n"
 "PO-Revision-Date: 2018-09-21 21:27+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -706,22 +706,46 @@ msgid "Max-width of the container. Use default for full width."
 msgstr ""
 
 #: functions/theme-options.php:652
+msgid "Content Max-width"
+msgstr ""
+
+#: functions/theme-options.php:653
+msgid "Max-width of the website content"
+msgstr ""
+
+#: functions/theme-options.php:666
+msgid "Content Media Max-width"
+msgstr ""
+
+#: functions/theme-options.php:667
+msgid "Max-width of the content media"
+msgstr ""
+
+#: functions/theme-options.php:680
 msgid "Sidebar Color"
 msgstr ""
 
-#: functions/theme-options.php:660
+#: functions/theme-options.php:688
 msgid "Header Line Color"
 msgstr ""
 
-#: functions/theme-options.php:668
+#: functions/theme-options.php:696
 msgid "Comment Bubble Color"
 msgstr ""
 
-#: functions/theme-options.php:676
+#: functions/theme-options.php:704
+msgid "Category Label Color"
+msgstr ""
+
+#: functions/theme-options.php:712
+msgid "Footer Color"
+msgstr ""
+
+#: functions/theme-options.php:720
 msgid "Header Logo Image Max-height"
 msgstr ""
 
-#: functions/theme-options.php:677
+#: functions/theme-options.php:721
 msgid ""
 "Your logo image should have the double height of this to be high resolution"
 msgstr ""
