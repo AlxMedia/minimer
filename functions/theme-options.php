@@ -697,6 +697,19 @@ Kirki::add_field( 'minimer_theme', array(
 	'section'		=> 'styling',
 	'default'		=> '#333333',
 ) );
+// Styling: Header Line Height
+Kirki::add_field( 'minimer_theme', array(
+	'type'			=> 'slider',
+	'settings'		=> 'header-line-height',
+	'label'			=> esc_html__( 'Header Line Height', 'minimer' ),
+	'section'		=> 'styling',
+	'default'		=> '10',
+	'choices'     => array(
+		'min'	=> '0',
+		'max'	=> '20',
+		'step'	=> '1',
+	),
+) );
 // Styling: Header Color
 Kirki::add_field( 'minimer_theme', array(
 	'type'			=> 'color',

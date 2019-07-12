@@ -140,6 +140,12 @@ if ( ! function_exists( 'minimer_dynamic_css' ) ) {
 #wrapper { border-top-color: '.esc_attr( get_theme_mod('color-header-line') ).'; }
 				'."\n";
 			}
+			// header line height
+			if ( get_theme_mod('header-line-height','10') != '10' ) {
+				$styles .= '
+#wrapper { border-top-width: '.esc_attr( get_theme_mod('header-line-height') ).'px; }
+				'."\n";
+			}
 			// header color
 			if ( get_theme_mod('color-header','#ffffff') != '#ffffff' ) {
 				$styles .= '
@@ -166,10 +172,6 @@ if ( ! function_exists( 'minimer_dynamic_css' ) ) {
 	.site-title { border-bottom-color: rgba(255,255,255,0.2)!important; }
 }
 				'."\n";
-			}
-			// header logo max-height
-			if ( get_theme_mod('logo-max-height','60') != '60' ) {
-				$styles .= '.site-title a img { max-height: '.esc_attr( get_theme_mod('logo-max-height') ).'px; }'."\n";
 			}
 			// comment bubble color
 			if ( get_theme_mod('color-comment-bubble','#eeeeee') != '#eeeeee' ) {
@@ -199,6 +201,10 @@ if ( ! function_exists( 'minimer_dynamic_css' ) ) {
 #footer-bottom .social-links .social-tooltip:hover:after { background: #fff; color: #666; }
 #footer-bottom .social-links .social-tooltip:hover:before { border-color: #fff transparent; }
 				'."\n";
+			}
+			// header logo max-height
+			if ( get_theme_mod('logo-max-height','60') != '60' ) {
+				$styles .= '.site-title a img { max-height: '.esc_attr( get_theme_mod('logo-max-height') ).'px; }'."\n";
 			}
 			// header text color
 			if ( get_theme_mod( 'header_textcolor' ) != '' ) {

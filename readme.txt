@@ -73,6 +73,7 @@ Sidebar images
 
 = 1.0.6 - 2019-07-12 =
 * Added header color styling option
+* Added header line height styling option
 * Added link color styling option
 * Fixed sidebar profile link color
 
