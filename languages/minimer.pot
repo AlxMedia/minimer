@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Minimer\n"
-"POT-Creation-Date: 2019-07-12 21:16+0200\n"
+"POT-Creation-Date: 2019-07-12 21:47+0200\n"
 "PO-Revision-Date: 2018-09-21 21:27+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -754,46 +754,54 @@ msgid "Max-width of the content media"
 msgstr ""
 
 #: functions/theme-options.php:716
+msgid "Page Content Max-width"
+msgstr ""
+
+#: functions/theme-options.php:717
+msgid "Max-width of the content on pages only"
+msgstr ""
+
+#: functions/theme-options.php:730
 msgid "Link Color"
 msgstr ""
 
-#: functions/theme-options.php:724
+#: functions/theme-options.php:738
 msgid "Sidebar Color"
 msgstr ""
 
-#: functions/theme-options.php:732
+#: functions/theme-options.php:746
 msgid "Header Line Color"
 msgstr ""
 
-#: functions/theme-options.php:740
+#: functions/theme-options.php:754
 msgid "Header Line Height"
 msgstr ""
 
-#: functions/theme-options.php:753
+#: functions/theme-options.php:767
 msgid "Header Color"
 msgstr ""
 
-#: functions/theme-options.php:761
+#: functions/theme-options.php:775
 msgid "Comment Bubble Color"
 msgstr ""
 
-#: functions/theme-options.php:769
+#: functions/theme-options.php:783
 msgid "Category Label Color"
 msgstr ""
 
-#: functions/theme-options.php:777
+#: functions/theme-options.php:791
 msgid "Footer Menu Color"
 msgstr ""
 
-#: functions/theme-options.php:785
+#: functions/theme-options.php:799
 msgid "Footer Color"
 msgstr ""
 
-#: functions/theme-options.php:793
+#: functions/theme-options.php:807
 msgid "Header Logo Image Max-height"
 msgstr ""
 
-#: functions/theme-options.php:794
+#: functions/theme-options.php:808
 msgid ""
 "Your logo image should have the double height of this to be high resolution"
 msgstr ""

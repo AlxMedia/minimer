@@ -109,6 +109,7 @@ if ( ! function_exists( 'minimer_dynamic_css' ) ) {
 .entry-footer,
 .pagination,
 .page-title,
+.page-title-inner,
 .front-widgets { max-width: '.esc_attr( get_theme_mod('content-width') ).'px; }
 				'."\n";
 			}
@@ -116,6 +117,14 @@ if ( ! function_exists( 'minimer_dynamic_css' ) ) {
 			if ( get_theme_mod('content-media-width','940') != '940' ) {
 				$styles .= '
 .entry-media { max-width: '.esc_attr( get_theme_mod('content-media-width') ).'px; }
+				'."\n";
+			}
+			// page content max-width
+			if ( get_theme_mod('page-content-width','740') != '740' ) {
+				$styles .= '
+body.page .entry-header,
+body.page .entry-content,
+body.page .entry-footer { max-width: '.esc_attr( get_theme_mod('page-content-width') ).'px; }
 				'."\n";
 			}
 			// link color

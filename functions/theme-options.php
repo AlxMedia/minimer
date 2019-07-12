@@ -709,6 +709,20 @@ Kirki::add_field( 'minimer_theme', array(
 		'step'	=> '1',
 	),
 ) );
+// Styling: Page Content Max-width
+Kirki::add_field( 'minimer_theme', array(
+	'type'			=> 'slider',
+	'settings'		=> 'page-content-width',
+	'label'			=> esc_html__( 'Page Content Max-width', 'minimer' ),
+	'description'	=> esc_html__( 'Max-width of the content on pages only', 'minimer' ),
+	'section'		=> 'styling',
+	'default'		=> '740',
+	'choices'     => array(
+		'min'	=> '500',
+		'max'	=> '1920',
+		'step'	=> '1',
+	),
+) );
 // Styling: Link Color
 Kirki::add_field( 'minimer_theme', array(
 	'type'			=> 'color',
