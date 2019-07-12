@@ -73,6 +73,7 @@ Sidebar images
 
 = 1.0.7 - 2019-07-12 =
 * Added blog excerpt option
+* Added footer menu color styling option
 
 = 1.0.6 - 2019-07-12 =
 * Added header color styling option

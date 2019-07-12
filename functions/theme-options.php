@@ -743,6 +743,14 @@ Kirki::add_field( 'minimer_theme', array(
 	'section'		=> 'styling',
 	'default'		=> '#eeeeee',
 ) );
+// Styling: Footer Menu Color
+Kirki::add_field( 'minimer_theme', array(
+	'type'			=> 'color',
+	'settings'		=> 'color-footer-menu',
+	'label'			=> esc_html__( 'Footer Menu Color', 'minimer' ),
+	'section'		=> 'styling',
+	'default'		=> '#ffffff',
+) );
 // Styling: Footer Color
 Kirki::add_field( 'minimer_theme', array(
 	'type'			=> 'color',
