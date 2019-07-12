@@ -2,6 +2,10 @@
 
 <div class="content">
 	
+	<?php if ( get_theme_mod('heading-enable','off') == 'on' ) : ?>
+		<?php get_template_part('inc/page-title'); ?>
+	<?php endif; ?>
+	
 	<?php get_template_part('inc/front-widgets-top'); ?>
 	
 	<?php if ( have_posts() ) : ?>

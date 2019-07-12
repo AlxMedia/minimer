@@ -53,6 +53,7 @@
 	
 	.entry-header .entry-title { font-size: 42px; }
 	.page-title h1, 
+	.page-title h2,
 	.page-title h3, 
 	.page-title h4 { font-size: 20px; }
 	.page-title .notebox { font-size: 16px; }
@@ -190,6 +191,7 @@
 	.sidebar .widget { padding-left: 15px!important; padding-right: 15px!important; }
 	.notebox { margin-bottom: 15px; }
 	.page-title h1, 
+	.page-title h2,
 	.page-title h3, 
 	.page-title h4 { font-size: 18px; }
 	.page-title .notebox { font-size: 15px; }

@@ -108,6 +108,33 @@ Kirki::add_field( 'minimer_theme', array(
 	'section'		=> 'general',
 	'default'		=> 'on',
 ) );
+// Blog: Enable Blog Heading
+Kirki::add_field( 'minimer_theme', array(
+	'type'			=> 'switch',
+	'settings'		=> 'heading-enable',
+	'label'			=> esc_html__( 'Enable Blog Heading', 'minimer' ),
+	'description'	=> esc_html__( 'Show heading on blog home', 'minimer' ),
+	'section'		=> 'blog',
+	'default'		=> 'off',
+) );
+// Blog: Heading
+Kirki::add_field( 'minimer_theme', array(
+	'type'			=> 'text',
+	'settings'		=> 'blog-heading',
+	'label'			=> esc_html__( 'Heading', 'minimer' ),
+	'description'	=> esc_html__( 'Your blog heading', 'minimer' ),
+	'section'		=> 'blog',
+	'default'		=> '',
+) );
+// Blog: Subheading
+Kirki::add_field( 'minimer_theme', array(
+	'type'			=> 'text',
+	'settings'		=> 'blog-subheading',
+	'label'			=> esc_html__( 'Subheading', 'minimer' ),
+	'description'	=> esc_html__( 'Your blog subheading', 'minimer' ),
+	'section'		=> 'blog',
+	'default'		=> '',
+) );
 // Blog: Use Excerpts
 Kirki::add_field( 'minimer_theme', array(
 	'type'			=> 'switch',
