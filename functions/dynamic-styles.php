@@ -118,6 +118,12 @@ if ( ! function_exists( 'minimer_dynamic_css' ) ) {
 .entry-media { max-width: '.esc_attr( get_theme_mod('content-media-width') ).'px; }
 				'."\n";
 			}
+			// link color
+			if ( get_theme_mod('color-link','#000000') != '#000000' ) {
+				$styles .= '
+.entry a { color: '.esc_attr( get_theme_mod('color-link') ).'; }
+				'."\n";
+			}
 			// sidebar color
 			if ( get_theme_mod('color-sidebar','#333333') != '#333333' ) {
 				$styles .= '

@@ -673,6 +673,14 @@ Kirki::add_field( 'minimer_theme', array(
 		'step'	=> '1',
 	),
 ) );
+// Styling: Link Color
+Kirki::add_field( 'minimer_theme', array(
+	'type'			=> 'color',
+	'settings'		=> 'color-link',
+	'label'			=> esc_html__( 'Link Color', 'minimer' ),
+	'section'		=> 'styling',
+	'default'		=> '#000000',
+) );
 // Styling: Sidebar Color
 Kirki::add_field( 'minimer_theme', array(
 	'type'			=> 'color',
