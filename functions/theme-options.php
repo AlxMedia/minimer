@@ -697,6 +697,14 @@ Kirki::add_field( 'minimer_theme', array(
 	'section'		=> 'styling',
 	'default'		=> '#333333',
 ) );
+// Styling: Header Color
+Kirki::add_field( 'minimer_theme', array(
+	'type'			=> 'color',
+	'settings'		=> 'color-header',
+	'label'			=> esc_html__( 'Header Color', 'minimer' ),
+	'section'		=> 'styling',
+	'default'		=> '#ffffff',
+) );
 // Styling: Comment Bubble
 Kirki::add_field( 'minimer_theme', array(
 	'type'			=> 'color',

@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Minimer\n"
-"POT-Creation-Date: 2019-07-12 18:26+0200\n"
+"POT-Creation-Date: 2019-07-12 18:50+0200\n"
 "PO-Revision-Date: 2018-09-21 21:27+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -734,22 +734,26 @@ msgid "Header Line Color"
 msgstr ""
 
 #: functions/theme-options.php:704
-msgid "Comment Bubble Color"
+msgid "Header Color"
 msgstr ""
 
 #: functions/theme-options.php:712
-msgid "Category Label Color"
+msgid "Comment Bubble Color"
 msgstr ""
 
 #: functions/theme-options.php:720
-msgid "Footer Color"
+msgid "Category Label Color"
 msgstr ""
 
 #: functions/theme-options.php:728
+msgid "Footer Color"
+msgstr ""
+
+#: functions/theme-options.php:736
 msgid "Header Logo Image Max-height"
 msgstr ""
 
-#: functions/theme-options.php:729
+#: functions/theme-options.php:737
 msgid ""
 "Your logo image should have the double height of this to be high resolution"
 msgstr ""
