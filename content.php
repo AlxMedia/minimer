@@ -19,7 +19,19 @@
 		</div>
 		<div class="entry-content">
 			<div class="entry themeform">
-				<?php the_content(esc_html__('Continue reading...','minimer')); ?>
+				
+				<?php if ( get_theme_mod('excerpt-enable','off') == 'on' ) : ?>
+					
+					<?php if (get_theme_mod('excerpt-length','26') != '0'): ?>
+						<?php the_excerpt(); ?>
+					<?php endif; ?>
+					
+				<?php else: ?>
+				
+					<?php the_content(esc_html__('Continue reading...','minimer')); ?>
+				
+				<?php endif; ?>
+				
 			</div>
 		</div>
 	</div>

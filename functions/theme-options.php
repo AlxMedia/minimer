@@ -108,6 +108,15 @@ Kirki::add_field( 'minimer_theme', array(
 	'section'		=> 'general',
 	'default'		=> 'on',
 ) );
+// Blog: Use Excerpts
+Kirki::add_field( 'minimer_theme', array(
+	'type'			=> 'switch',
+	'settings'		=> 'excerpt-enable',
+	'label'			=> esc_html__( 'Enable Excerpts', 'minimer' ),
+	'description'	=> esc_html__( 'Show excerpt instead of full post', 'minimer' ),
+	'section'		=> 'blog',
+	'default'		=> 'off',
+) );
 // Blog: Excerpt Length
 Kirki::add_field( 'minimer_theme', array(
 	'type'			=> 'slider',
