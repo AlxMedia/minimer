@@ -24,6 +24,7 @@
 					
 					<?php if (get_theme_mod('excerpt-length','26') != '0'): ?>
 						<?php the_excerpt(); ?>
+						<a class="more-link" href="<?php the_permalink(); ?>"><?php esc_html_e('Continue reading...','minimer'); ?></a>
 					<?php endif; ?>
 					
 				<?php else: ?>
