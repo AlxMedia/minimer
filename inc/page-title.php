@@ -40,22 +40,22 @@
 			
 		<?php elseif ( is_author() ): ?>
 			<?php $author = get_userdata( get_query_var('author') );?>
-			<h1><i class="fa fa-user"></i><span><?php echo $author->display_name;?></span></h1>
+			<h1><i class="fa fa-user"></i><?php echo $author->display_name;?></h1>
 			
 		<?php elseif ( is_category() ): ?>
-			<h1><i class="fa fa-folder-open"></i><span><?php echo single_cat_title('', false); ?></span></h1>
+			<h1><i class="fa fa-folder-open"></i><?php echo single_cat_title('', false); ?></h1>
 
 		<?php elseif ( is_tag() ): ?>
-			<h1><i class="fa fa-tags"></i><span><?php echo single_tag_title('', false); ?></span></h1>
+			<h1><i class="fa fa-tags"></i><?php echo single_tag_title('', false); ?></h1>
 			
 		<?php elseif ( is_day() ): ?>
-			<h1><i class="fa fa-calendar"></i><span><?php echo esc_html( get_the_time('F j, Y') ); ?></span></h1>
+			<h1><i class="fa fa-calendar"></i><?php echo esc_html( get_the_time('F j, Y') ); ?></h1>
 			
 		<?php elseif ( is_month() ): ?>
-			<h1><i class="fa fa-calendar"></i><span><?php echo esc_html( get_the_time('F Y') ); ?></span></h1>
+			<h1><i class="fa fa-calendar"></i><?php echo esc_html( get_the_time('F Y') ); ?></h1>
 				
 		<?php elseif ( is_year() ): ?>
-			<h1><i class="fa fa-calendar"></i><span><?php echo esc_html( get_the_time('Y') ); ?></span></h1>
+			<h1><i class="fa fa-calendar"></i><?php echo esc_html( get_the_time('Y') ); ?></h1>
 		
 		<?php else: ?>
 			<h2><?php the_title(); ?></h2>
