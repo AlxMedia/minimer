@@ -18,7 +18,13 @@
 					</div>
 				</header>
 				<div class="entry-media">
-					<?php if( get_post_format() ) { get_template_part('inc/post-formats'); } ?>
+					<?php if ( get_theme_mod('post-formats-enable','off') == 'on' || get_post_format() ) : ?>
+						<?php if( get_post_format() ) { get_template_part('inc/post-formats'); } ?>
+					<?php else: ?>
+						<?php if ( has_post_thumbnail() ) : ?>
+							<?php the_post_thumbnail('minimer-large'); ?>
+						<?php endif; ?>
+					<?php endif; ?>
 				</div>
 				<div class="entry-content">
 					<div class="entry themeform">	

@@ -135,6 +135,15 @@ Kirki::add_field( 'minimer_theme', array(
 	'section'		=> 'blog',
 	'default'		=> '',
 ) );
+// Blog: Post Formats
+Kirki::add_field( 'minimer_theme', array(
+	'type'			=> 'switch',
+	'settings'		=> 'post-formats-enable',
+	'label'			=> esc_html__( 'Enable Post Formats', 'minimer' ),
+	'description'	=> esc_html__( 'Show post formats instead of featured images on home, archive and search. Standard format posts will also show no featured image on single view.', 'minimer' ),
+	'section'		=> 'blog',
+	'default'		=> 'off',
+) );
 // Blog: Use Excerpts
 Kirki::add_field( 'minimer_theme', array(
 	'type'			=> 'switch',

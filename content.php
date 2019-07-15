@@ -15,7 +15,18 @@
 			</div>
 		</header>
 		<div class="entry-media">
-			<?php if( get_post_format() ) { get_template_part('inc/post-formats'); } ?>
+			<?php if ( get_theme_mod('post-formats-enable','off') == 'on' ) : ?>
+				<?php if( get_post_format() ) { get_template_part('inc/post-formats'); } ?>
+			<?php else: ?>
+				<?php if ( has_post_thumbnail() ) : ?>
+					<a href="<?php the_permalink(); ?>">
+						<?php the_post_thumbnail('minimer-large'); ?>
+						<?php if ( has_post_format('video') && !is_sticky() ) echo'<span class="thumb-icon"><i class="fa fa-play"></i></span>'; ?>
+						<?php if ( has_post_format('audio') && !is_sticky() ) echo'<span class="thumb-icon"><i class="fa fa-volume-up"></i></span>'; ?>
+						<?php if ( is_sticky() ) echo'<span class="thumb-icon"><i class="fa fa-star"></i></span>'; ?>
+					</a>
+				<?php endif; ?>
+			<?php endif; ?>
 		</div>
 		<div class="entry-content">
 			<div class="entry themeform">
