@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Minimer\n"
-"POT-Creation-Date: 2019-07-15 16:47+0200\n"
+"POT-Creation-Date: 2019-07-15 17:03+0200\n"
 "PO-Revision-Date: 2018-09-21 21:27+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -275,7 +275,7 @@ msgstr ""
 #: functions/theme-options.php:143
 msgid ""
 "Show post formats instead of featured images on home, archive and search. "
-"Standard format posts will also show no featured image on single view."
+"Use image post format to still display featured images."
 msgstr ""
 
 #: functions/theme-options.php:151
