@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Minimer\n"
-"POT-Creation-Date: 2019-07-15 17:03+0200\n"
+"POT-Creation-Date: 2019-07-15 23:37+0200\n"
 "PO-Revision-Date: 2018-09-21 21:27+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -47,7 +47,7 @@ msgstr ""
 msgid "by"
 msgstr ""
 
-#: content.php:38 content.php:43
+#: content.php:40 content.php:45
 msgid "Continue reading..."
 msgstr ""
 
