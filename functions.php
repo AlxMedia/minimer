@@ -674,10 +674,6 @@ if ( ! function_exists( 'minimer_plugins' ) ) {
 				array(
 					'name' => esc_html__( 'WP-PageNavi', 'minimer' ),
 					'slug' => 'wp-pagenavi',
-				),
-				array(
-					'name' => esc_html__( 'Responsive Lightbox', 'minimer' ),
-					'slug' => 'responsive-lightbox',
 				)
 			);	
 			tgmpa( $plugins );
