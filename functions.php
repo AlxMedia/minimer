@@ -713,3 +713,14 @@ remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wra
 add_action('woocommerce_before_main_content', 'minimer_wc_wrapper_start', 10);
 add_action('woocommerce_after_main_content', 'minimer_wc_wrapper_end', 10);
 
+
+/*  Accessibility IE11 fix - https://git.io/vWdr2
+/* ------------------------------------ */
+function minimer_skip_link_focus_fix() {
+	?>
+	<script>
+	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
+	</script>
+	<?php
+}
+add_action( 'wp_print_footer_scripts', 'minimer_skip_link_focus_fix' );
