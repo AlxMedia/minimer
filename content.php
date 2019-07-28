@@ -10,7 +10,7 @@
 				<span class="byline"><?php esc_html_e('by','minimer'); ?> <span class="author"><?php the_author_posts_link(); ?></span></span>
 				<span class="entry-category"><?php the_category(' '); ?></span>
 				<?php if ( comments_open() && ( get_theme_mod( 'comment-count', 'on' ) =='on' ) ): ?>
-					<a class="entry-comments" href="<?php comments_link(); ?>"><i class="fa fa-comment"></i><span><?php comments_number( '0', '1', '%' ); ?></span></a>
+					<a class="entry-comments" href="<?php comments_link(); ?>"><i class="fas fa-comment"></i><span><?php comments_number( '0', '1', '%' ); ?></span></a>
 				<?php endif; ?>
 			</div>
 		</header>
@@ -22,9 +22,9 @@
 					<a href="<?php the_permalink(); ?>">
 						<div class="image-container">
 							<?php the_post_thumbnail('minimer-large'); ?>
-							<?php if ( has_post_format('video') && !is_sticky() ) echo'<span class="thumb-icon"><i class="fa fa-play"></i></span>'; ?>
-							<?php if ( has_post_format('audio') && !is_sticky() ) echo'<span class="thumb-icon"><i class="fa fa-volume-up"></i></span>'; ?>
-							<?php if ( is_sticky() ) echo'<span class="thumb-icon"><i class="fa fa-star"></i></span>'; ?>
+							<?php if ( has_post_format('video') && !is_sticky() ) echo'<span class="thumb-icon"><i class="fas fa-play"></i></span>'; ?>
+							<?php if ( has_post_format('audio') && !is_sticky() ) echo'<span class="thumb-icon"><i class="fas fa-volume-up"></i></span>'; ?>
+							<?php if ( is_sticky() ) echo'<span class="thumb-icon"><i class="fas fa-star"></i></span>'; ?>
 						</div>
 					</a>
 				<?php endif; ?>

@@ -584,7 +584,7 @@ Kirki::add_field( 'minimer_theme', array(
 	'label'			=> esc_html__( 'Create Social Links', 'minimer' ),
 	'description'	=> esc_html__( 'Create and organize your social links', 'minimer' ),
 	'section'		=> 'social',
-	'tooltip'		=> esc_html__( 'Font Awesome names:', 'minimer' ) . ' <a href="https://fontawesome.com/v4.7.0/icons/" target="_blank"><strong>' . esc_html__( 'View All', 'minimer' ) . ' </strong></a>',
+	'tooltip'		=> esc_html__( 'Font Awesome names:', 'minimer' ) . ' <a href="https://fontawesome.com/icons?d=gallery&s=brands&m=free" target="_blank"><strong>' . esc_html__( 'View All', 'minimer' ) . ' </strong></a>',
 	'row_label'		=> array(
 		'type'	=> 'text',
 		'value'	=> esc_html__('social link', 'minimer' ),
@@ -601,7 +601,7 @@ Kirki::add_field( 'minimer_theme', array(
 		'social-icon'	=> array(
 			'type'			=> 'text',
 			'label'			=> esc_html__( 'Icon Name', 'minimer' ),
-			'description'	=> esc_html__( 'Font Awesome icons. Ex: fa-facebook ', 'minimer' ) . ' <a href="https://fontawesome.com/v4.7.0/icons/" target="_blank"><strong>' . esc_html__( 'View All', 'minimer' ) . ' </strong></a>',
+			'description'	=> esc_html__( 'Font Awesome icons. Ex: fa-facebook ', 'minimer' ) . ' <a href="https://fontawesome.com/icons?d=gallery&s=brands&m=free" target="_blank"><strong>' . esc_html__( 'View All', 'minimer' ) . ' </strong></a>',
 			'default'		=> 'fa-',
 		),
 		'social-link'	=> array(

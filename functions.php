@@ -199,7 +199,7 @@ if ( ! function_exists( 'minimer_styles' ) ) {
 	function minimer_styles() {
 		wp_enqueue_style( 'minimer-style', get_stylesheet_uri() );
 		if ( get_theme_mod('responsive','on') =='on' ) { wp_enqueue_style( 'minimer-responsive', get_template_directory_uri().'/responsive.css' ); }
-		wp_enqueue_style( 'minimer-font-awesome', get_template_directory_uri().'/fonts/font-awesome.min.css' );
+		wp_enqueue_style( 'minimer-font-awesome', get_template_directory_uri().'/fonts/all.min.css' );
 	}
 	
 }
@@ -339,7 +339,7 @@ if ( ! function_exists( 'minimer_social_links' ) ) {
 					if ( isset($item['social-target']) && !empty($item['social-target']) ) 
 						{ $target = 'target="_blank"'; } else $target = '';
 					if ( isset($item['social-icon']) && !empty($item['social-icon']) ) 
-						{ $icon = 'class="fa ' .esc_attr( $item['social-icon'] ). '"'; } else $icon = '';
+						{ $icon = 'class="fab ' .esc_attr( $item['social-icon'] ). '"'; } else $icon = '';
 					if ( isset($item['social-color']) && !empty($item['social-color']) ) 
 						{ $color = 'style="color: ' .esc_attr( $item['social-color'] ). ';"'; } else $color = '';
 					

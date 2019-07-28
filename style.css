@@ -1,7 +1,7 @@
 /*
 Theme Name: Minimer
 Theme URI: http://alx.media/themes/minimer/
-Version: 1.1.3
+Version: 1.1.4
 Description: <a href="http://alx.media/themes/minimer/">Minimer</a> is a flexible personal blog theme with plenty of options. Optimized for all devices, this theme will stand out with a unique slanted sidebar including profile image, name and description. It also includes a featured posts carousel that can be enabled. Set the theme to any width and boxed style if you so wish. Use a sidebar to the left or right, set it to any color you want, or disable it entirely for a more clean look.
 Author: Alexander Agnarson
 Author URI: http://alx.media
@@ -91,6 +91,20 @@ hr { border: 0; background: #eee; height: 1px; margin: 40px 0; }
 /*  base : font awesome square size
 /* ------------------------------------ */
 .fa { width: 1em; text-align: center; }
+
+/* temporary font awesome 5 fix for alx-extensions plugin */
+.sharrre-container .share .fa:before { font-family: "Font Awesome 5 Brands"; font-style: normal; font-variant: normal; text-rendering: auto; line-height: 1; }
+.sharrre-header .fa-twitter:before { content: "\f099"; }
+.sharrre-header .fa-facebook-square:before { content: "\f082"; }
+.sharrre-header .fa-pinterest:before { content: "\f0d2"; }
+.sharrre-header .fa-linkedin-square:before { content: "\f08c"; }
+.sharrre-header .count .fa:before { font-family: "Font Awesome 5 Free"; font-style: normal; font-variant: normal; text-rendering: auto; line-height: 1; }
+.sharrre-header .count .fa-plus:before { content: "\f067"; }
+.alx-tabs-nav i:before { font-family: "Font Awesome 5 Free"; font-style: normal; font-variant: normal; text-rendering: auto; line-height: 1; }
+.alx-tabs-nav .fa-clock-o:before { content: "\f017"; }
+.alx-tabs-nav .fa-star:before { content: "\f005"; }
+.alx-tabs-nav .fa-comments-o:before { content: "\f086"; }
+.alx-tabs-nav .fa-tags:before { content: "\f02c"; }
 
 /*  base : fonts
 /* ------------------------------------ */
@@ -210,7 +224,7 @@ input, textarea, button, select, label { font-family: inherit; }
 
 .themeform.searchform div { position: relative; }
 .themeform.searchform div input { padding-left: 26px; line-height: 20px; }
-.themeform.searchform div:after { color: #ccc; line-height: 24px; font-size: 14px; content: "\f002"; position: absolute; left: 10px; top: 6px; font-family: FontAwesome; }
+.themeform.searchform div:after { color: #ccc; line-height: 24px; font-size: 14px; content: "\f002"; position: absolute; left: 10px; top: 6px; font-family: "Font Awesome 5 Free"; font-weight: 900; }
 
 /*  base : entry
 /* ------------------------------------ */
@@ -235,7 +249,7 @@ input, textarea, button, select, label { font-family: inherit; }
 .entry address { margin-bottom: 1em; }
 .entry blockquote { position: relative; color: #777; font-style: italic; margin: 0 0 20px 0; padding-left: 50px; }
 .entry blockquote p { font-weight: 400; color: #444; margin-bottom: 0.75em; }
-.entry blockquote:before { content: "\f10d"; color: #ccc; font-size: 32px; font-style: normal; font-family: FontAwesome; text-align: center; position: absolute; left: 0; top: 0; }
+.entry blockquote:before { content: "\f10d"; color: #ccc; font-size: 32px; font-style: normal; font-family: "Font Awesome 5 Free"; font-weight: 900; text-align: center; position: absolute; left: 0; top: 0; }
 .entry blockquote.twitter-tweet:before { content: "\f099"; }
 .entry code, .entry pre { font-family: Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace; font-size: 11px; }
 .entry pre { background: url(img/pre.png) repeat top; padding: 18px 20px; margin: 30px 0; border: 1px solid #ddd; line-height: 19px; white-space: pre-wrap; word-wrap: break-word; overflow-x: auto; overflow-y: hidden; }
@@ -437,7 +451,7 @@ box-shadow: inset 0 1px 1px rgba(0,0,0,0.4), 0 1px 0 rgba(255,255,255,0.03); }
 /* ------------------------------------ */
 .page-title { margin-bottom: 60px; }
 .page-title-inner { max-width: 740px; padding: 0; margin: 0 auto; border-bottom: 1px solid #eee; padding-bottom: 30px; }
-.page-title .fa { margin-right: 12px; }
+.page-title i { margin-right: 12px; }
 .page-title h1,
 .page-title h2,
 .page-title h3,
@@ -488,7 +502,7 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 .thumb-icon .fa-play { margin: -1px 0 0 2px; }
 .thumb-icon.small { width: 24px; height: 24px; position: absolute; bottom: 50%; left: 50%; margin: 0 0 -12px -12px;
 -webkit-border-radius: 3px; border-radius: 3px; }
-.thumb-icon.small .fa { font-size: 12px; line-height: 16px; padding: 5px 0; }
+.thumb-icon.small i { font-size: 12px; line-height: 16px; padding: 5px 0; }
 
 /*  common : nav
 /* ------------------------------------ */
@@ -497,7 +511,7 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 .nav-toggle i { font-size: 24px; padding: 10px 0; }
 .nav-text { display: none; float: right; font-size: 16px; line-height: 24px; padding: 13px 20px; }
 .nav li > a:after,
-.nav > li > a:after { font-family: FontAwesome; display: inline-block; }
+.nav > li > a:after { font-family: "Font Awesome 5 Free"; font-weight: 900; display: inline-block; }
 
 @media only screen and (min-width: 720px) {
 	
@@ -617,7 +631,7 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 .toggle-search { color: #555; font-size: 18px; line-height: 24px; cursor: pointer; padding: 6px 0; display: block; float: right; margin-top: 20px; margin-left: 24px; }
 .toggle-search:hover,
 .toggle-search.active { color: #333; }
-.toggle-search.active .fa.fa-search:before { content: "\f00d"; font-size: 22px; }
+.toggle-search.active i:before { content: "\f00d"; font-size: 22px; }
 .search-expand { display: none; position: absolute; top: 30px; right: 70px; width: 340px; z-index: 103; }
 .search-expand-inner { padding: 0 10px 10px; }
 .search-expand .themeform input { background: #f2f2f2; width: 100%; border: 1px solid #eee; border-radius: 20px; }
@@ -727,8 +741,8 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 .slick-posts-nav .slick-next:focus { background: #e5e5e5; }
 .slick-posts-nav .slick-prev { left: 0; }
 .slick-posts-nav .slick-next { right: 0; }
-.slick-posts-nav .slick-prev:before { color: #000; font-family: "FontAwesome"; content: "\f053"; }
-.slick-posts-nav .slick-next:before { color: #000; font-family: "FontAwesome"; content: "\f054"; }
+.slick-posts-nav .slick-prev:before { color: #000; font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f053"; }
+.slick-posts-nav .slick-next:before { color: #000; font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f054"; }
 
 .slick-image-slide-wrapper { position: relative; }
 .slick-image-slide { background: #333; }
@@ -746,8 +760,8 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 .slick-image-slide-nav .slick-next:focus { background: #e5e5e5; }
 .slick-image-slide-nav .slick-prev { left: 0; }
 .slick-image-slide-nav .slick-next { right: 0; }
-.slick-image-slide-nav .slick-prev:before { color: #000; font-family: "FontAwesome"; content: "\f053"; }
-.slick-image-slide-nav .slick-next:before { color: #000; font-family: "FontAwesome"; content: "\f054"; }
+.slick-image-slide-nav .slick-prev:before { color: #000; font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f053"; }
+.slick-image-slide-nav .slick-next:before { color: #000; font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f054"; }
 .slick-image-slide-dots { background: red; }
 .slick-image-slide-dots .slick-dots li { height: 10px; width: 10px; margin: 0 3px; }
 .slick-image-slide-dots .slick-dots li button { background: rgba(0,0,0,0.2); height: 10px; width: 10px; border-radius: 100%; text-indent: -9999px; overflow: hidden; }
@@ -953,7 +967,7 @@ article.post { margin-bottom: 60px; }
 /* ------------------------------------ */
 .author-bio { background: #fff; padding: 0 20px 20px; border-radius: 4px; position: relative; color: #777; margin: 40px 0; text-align: center; border: 1px solid rgba(0,0,0,0.15); box-shadow: 3px 3px 0 0 rgba(0,0,0,0.05); }
 .author-bio .bio-avatar { width: 64px; height: auto; position: relative; display: inline-block; margin-top: -32px; }
-.author-bio .bio-avatar:after { background: #333; position: absolute; right: 0; bottom: 0; padding: 4px 4px; content: "\f040"; color: #fff; font-size: 12px; line-height: 12px; width: 12px; font-style: normal; font-family: FontAwesome; text-align: center; border-radius: 100%; }
+.author-bio .bio-avatar:after { background: #333; position: absolute; right: 0; bottom: 0; padding: 4px 4px; content: "\f303"; color: #fff; font-size: 10px; line-height: 12px; width: 12px; font-style: normal; font-family: "Font Awesome 5 Free"; font-weight: 900; text-align: center; border-radius: 100%; }
 .author-bio .bio-avatar img { display: block; width: 100%; height: auto; border-radius: 100%; }
 .author-bio p { margin-bottom: 8px; }
 .author-bio .bio-name { color: #333; font-size: 19px; font-weight: 600; margin: 10px 0; }
@@ -1031,7 +1045,7 @@ article.post { margin-bottom: 60px; }
 .widget > ul li:before,
 .widget > ul li a:before,
 .widget > div > ul li a:before,
-.widget_calendar caption:before { font-family: FontAwesome; font-size: 12px; margin-right: 6px; color: #ccc; display: inline-block!important; width: 1em; text-align: center; }
+.widget_calendar caption:before { font-family: "Font Awesome 5 Free"; font-weight: 900; font-size: 12px; margin-right: 6px; color: #ccc; display: inline-block!important; width: 1em; text-align: center; }
 .widget > ul li a:hover:before { color: #999; }
 
 .widget_archive > ul > li a:before { content: "\f073"; } 
@@ -1289,7 +1303,7 @@ article.post { margin-bottom: 60px; }
 .commentlist .fn, .pinglist .ping-link { color: #333; font-size: 13px; font-style: normal; font-weight: 600; }
 .commentlist .says { display: none; }
 .commentlist .avatar { position: absolute; left: -60px; top: 0; width: 48px; height: 48px; border-radius: 100%; }
-.commentlist .comment-meta:before, .pinglist .ping-meta:before { color: #ccc; content: "\f017"; font-family: FontAwesome; font-size: 10px; margin-right: 3px; vertical-align: 4%; } 
+.commentlist .comment-meta:before, .pinglist .ping-meta:before { color: #ccc; content: "\f017"; font-family: "Font Awesome 5 Free"; font-weight: 900; font-size: 10px; margin-right: 3px; vertical-align: 4%; } 
 .commentlist .comment-meta a, .pinglist .ping-meta { color: #aaa; }
 .commentlist .reply { font-size: 13px; line-height: 16px; }
 .commentlist .reply a { color: #aaa; }
@@ -1308,10 +1322,10 @@ article.post { margin-bottom: 60px; }
 
 /* post author & admin comment */
 .commentlist li.bypostauthor > .comment-body:after,
-.commentlist li.comment-author-admin > .comment-body:after { background: #333; display: block; position: absolute; content: "\f040"; color: #fff; line-height: 12px; width: 12px; font-style: normal; font-family: FontAwesome; text-align: center; }
+.commentlist li.comment-author-admin > .comment-body:after { background: #333; display: block; position: absolute; content: "\f303"; color: #fff; line-height: 12px; width: 12px; font-style: normal; font-family: "Font Awesome 5 Free"; font-weight: 900; text-align: center; }
 .commentlist li.comment-author-admin > .comment-body:after { content: "\f005"; /* star for admin */ }
 .commentlist li.bypostauthor > .comment-body:after,
-.commentlist li.comment-author-admin > .comment-body:after { top: 32px; left: -28px; font-size: 10px; padding: 2px; border-radius: 100%; }
+.commentlist li.comment-author-admin > .comment-body:after { top: 32px; left: -28px; font-size: 8px; padding: 2px; border-radius: 100%; }
 .commentlist li li.bypostauthor > .comment-body:after,
 .commentlist li li.comment-author-admin > .comment-body:after { top: 22px; left: -26px; font-size: 8px; padding: 1px; border-radius: 100%; }
 
@@ -1363,7 +1377,7 @@ li #reply-title { font-size: 0; margin: 0!important; padding: 0; height: 0; bord
 .wp-pagenavi a,
 .wp-pagenavi span { color: #aaa; font-size: 16px; padding: 7px 8px; display: inline-block; margin: 0 2px 10px; }
 .wp-pagenavi span.pages { font-size: 17px; font-weight: 300; display: block; margin-bottom: 1em!important; border: none!important; }
-.wp-pagenavi span.pages:before { content: "\f15c"; font-family: FontAwesome; margin-right: 6px; }
+.wp-pagenavi span.pages:before { content: "\f15c"; font-family: "Font Awesome 5 Free"; font-weight: 900; margin-right: 6px; }
 .wp-pagenavi span.extend { border: none!important; border-bottom: 3px solid transparent; border-top: 1px solid transparent; }
 .wp-pagenavi a:hover,
 .wp-pagenavi a:active,
