@@ -4,7 +4,7 @@
 	
 	<div class="post-wrapper group">
 		<header class="entry-header group">
-			<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+			<h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 			<div class="entry-meta">
 				<span class="posted-on"><?php esc_html_e('Posted on','minimer'); ?> <?php the_time( get_option('date_format') ); ?></span>
 				<span class="byline"><?php esc_html_e('by','minimer'); ?> <span class="author"><?php the_author_posts_link(); ?></span></span>
