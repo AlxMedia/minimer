@@ -10,6 +10,13 @@
 			<header class="entry-header group">
 				<h1 class="entry-title"><?php the_title(); ?></h1>
 			</header>
+			
+			<?php if ( has_post_thumbnail() ) : ?>
+				<div class="entry-media">
+					<?php the_post_thumbnail('minimer-large'); ?>
+				</div>
+			<?php endif; ?>
+			
 			<div class="entry-content">
 				<div class="entry themeform">
 					<?php the_content(); ?>
