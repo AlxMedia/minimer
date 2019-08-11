@@ -2,14 +2,14 @@
 Contributors: alxmedia
 Requires at least: 5.0
 Tested up to: 5.0
-Version: 1.1.6
+Version: 1.1.7
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0
 Tags: blog, one-column, two-columns, right-sidebar, left-sidebar, custom-colors, custom-menu, featured-images, flexible-header, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready, custom-logo, custom-header, custom-background
 
 == Description ==
 
-Minimer is a flexible personal blog theme with plenty of options. Optimized for all devices, this theme will stand out with a unique slanted sidebar including profile image, name and description. It also includes a featured posts carousel that can be enabled. Set the theme to any width and boxed style if you so wish. Use a sidebar to the left or right, set it to any color you want, or disable it entirely for a more clean look.
+Minimer is a flexible personal blog theme with plenty of options. Optimized for all devices, this theme will stand out with a unique slanted sidebar including profile image, name and description. It also includes a featured posts carousel that can be enabled. Set the theme to any width and boxed style if you so wish. Use a sidebar to the left or right, set it to any color you want, or disable it entirely for a more clean look. Demo: http://demo.alx.media/x/?theme=Minimer
 
 == Installation ==
 
@@ -70,6 +70,9 @@ Sidebar images
 1. https://stocksnap.io/photo/IPXQTD44G8 - CC0 1.0 Universal (CC0 1.0)
 
 == Changelog ==
+
+= 1.1.7 - 2019-08-11 =
+* Updated theme description
 
 = 1.1.6 - 2019-08-04 =
 * Added featured image to pages
