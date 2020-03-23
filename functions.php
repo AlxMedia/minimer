@@ -198,7 +198,7 @@ if ( ! function_exists( 'minimer_styles' ) ) {
 	
 	function minimer_styles() {
 		wp_enqueue_style( 'minimer-style', get_stylesheet_uri() );
-		if ( get_theme_mod('responsive','on') =='on' ) { wp_enqueue_style( 'minimer-responsive', get_template_directory_uri().'/responsive.css' ); }
+		wp_enqueue_style( 'minimer-responsive', get_template_directory_uri().'/responsive.css' );
 		wp_enqueue_style( 'minimer-font-awesome', get_template_directory_uri().'/fonts/all.min.css' );
 	}
 	
