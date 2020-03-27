@@ -884,8 +884,9 @@ article.post { margin-bottom: 60px; }
 .entry-bar.hide-scroll { -webkit-transform: translateY(100%); transform: translateY(100%); }
 
 .entry-bar { background: #fff; border-top: 1px solid #e5e5e5; padding: 0; position: fixed; bottom: 0; left: 0; right: 0; z-index: 999; }
+.entry-bar ul { width: 100%; }
 .entry-bar .entry-bar-left { width: 50%; float: left; }
-.entry-bar .entry-bar-right { width: 50%; float: left; }
+.entry-bar .entry-bar-right { display: flex; }
 .entry-bar .sharrre-container { float: left; min-width: 100%; }
 
 
