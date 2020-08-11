@@ -165,21 +165,21 @@ body.page .entry-footer { max-width: '.esc_attr( get_theme_mod('page-content-wid
 #header .social-links { border-left-color: rgba(255,255,255,0.3); }
 #header .social-links .social-tooltip { color: rgba(255,255,255,0.8); }
 #header .social-links .social-tooltip:hover { color: #fff; }
-.toggle-search { color: rgba(255,255,255,0.8); }
-.toggle-search:hover,
-.toggle-search.active { color: #fff; }
-@media only screen and (min-width: 720px) {
-	#nav-header .nav > li > a { color: rgba(255,255,255,0.8); }	
-	#nav-header .nav > li > a:hover, 
-	#nav-header .nav > li:hover > a { color: #fff; }
-	#nav-header .nav > li.current_page_item > a, 
-	#nav-header .nav > li.current-menu-item > a,
-	#nav-header .nav > li.current-menu-ancestor > a,
-	#nav-header .nav > li.current-post-parent > a { color: #fff; }
-}
 @media only screen and (max-width: 719px) {
 	.site-title { border-bottom-color: rgba(255,255,255,0.2)!important; }
 }
+@media only screen and (min-width: 720px) {
+	.toggle-search .svg-icon { fill: #fff; }
+}
+#header .nav-menu:not(.mobile) a { color: rgba(255,255,255,0.8); }
+#header .nav-menu:not(.mobile) a:hover { color: #fff; }
+#header .nav-menu:not(.mobile) button { color: #fff; }
+#header .nav-menu:not(.mobile) button.active { background: rgba(255,255,255,0.15); }
+#header .nav-menu:not(.mobile) button .svg-icon { fill: rgba(255,255,255,0.5); }
+#header .nav-menu:not(.mobile) li.current_page_item > span > a, 
+#header .nav-menu:not(.mobile) li.current-menu-item > span > a, 
+#header .nav-menu:not(.mobile) li.current-menu-ancestor > span > a, 
+#header .nav-menu:not(.mobile) li.current-post-parent > span > a { color: #fff; }
 				'."\n";
 			}
 			// comment bubble color
@@ -200,27 +200,28 @@ body.page .entry-footer { max-width: '.esc_attr( get_theme_mod('page-content-wid
 			// footer menu color
 			if ( get_theme_mod('color-footer-menu','#ffffff') != '#ffffff' ) {
 				$styles .= '
-#nav-footer.nav-container,
+#footer .nav-menu:not(.mobile),
+#footer .nav-menu.mobile,
 #footer-bottom #back-to-top { background: '.esc_attr( get_theme_mod('color-footer-menu') ).'; }
 #footer-bottom #back-to-top { color: #fff; }
 #footer-bottom #back-to-top:hover { color: rgba(255,255,255,0.8); }
-#nav-footer .nav-toggle { color: #fff; }
-@media only screen and (min-width: 720px) {
-	#nav-footer .nav > li > a { color: rgba(255,255,255,0.8); }	
-	#nav-footer .nav > li > a:hover, 
-	#nav-footer .nav > li:hover > a { color: #fff; }
-	#nav-footer .nav > li.current_page_item > a, 
-	#nav-footer .nav > li.current-menu-item > a,
-	#nav-footer .nav > li.current-menu-ancestor > a,
-	#nav-footer .nav > li.current-post-parent > a { color: #fff; }
-}
-@media only screen and (max-width: 719px) {
-	#nav-footer .nav li a { color: rgba(255,255,255,0.8); border-top-color: rgba(255,255,255,0.2); }	
-	#nav-footer .nav li > a:hover { background: rgba(0,0,0,0.05); color: #fff; }
-	#nav-footer .nav li.current_page_item > a, 
-	#nav-footer .nav li.current-menu-item > a,
-	#nav-footer .nav li.current-post-parent > a { background: rgba(0,0,0,0.05); color: #fff; }
-}
+#footer .nav-menu:not(.mobile) a { color: rgba(255,255,255,0.8); }
+#footer .nav-menu:not(.mobile) a:hover { color: #fff; }
+#footer .nav-menu:not(.mobile) button { color: #fff; }
+#footer .nav-menu:not(.mobile) button.active { background: rgba(255,255,255,0.15); }
+#footer .nav-menu:not(.mobile) button .svg-icon { fill: rgba(255,255,255,0.5); }
+#footer .nav-menu:not(.mobile) li.current_page_item > span > a, 
+#footer .nav-menu:not(.mobile) li.current-menu-item > span > a, 
+#footer .nav-menu:not(.mobile) li.current-menu-ancestor > span > a, 
+#footer .nav-menu:not(.mobile) li.current-post-parent > span > a { color: #fff; }
+#footer .nav-menu.mobile ul li a { color: #fff; }
+#footer .nav-menu.mobile ul li .menu-item-wrapper,
+#footer .nav-menu.mobile ul ul li .menu-item-wrapper { border-bottom: 1px solid rgba(255,255,255,0.15); }
+#footer .nav-menu.mobile > div > ul > li:first-child .menu-item-wrapper { border-top: 1px solid rgba(255,255,255,0.15); }
+#footer .nav-menu.mobile ul button,
+#footer .nav-menu.mobile ul ul button { border-left: 1px solid rgba(255,255,255,0.15); }
+#footer .nav-menu .svg-icon { fill: #fff; }
+#footer .menu-toggle-icon span { background: #fff; }
 #footer { border-top: 0; }
 				'."\n";
 			}
