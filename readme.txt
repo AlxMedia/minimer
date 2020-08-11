@@ -74,6 +74,7 @@ Sidebar images
 = 1.2.2 - 2020-08-11 =
 * Improved a11y
 * Added new menu
+* Improved social links/posts nav bar when social links are disabled - @justinmassiot
 
 = 1.2.1 - 2020-08-11 =
 * Updated to Kirki 3.1.5
