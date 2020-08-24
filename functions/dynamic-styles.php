@@ -217,9 +217,9 @@ body.page .entry-footer { max-width: '.esc_attr( get_theme_mod('page-content-wid
 #footer .nav-menu.mobile ul li a { color: #fff; }
 #footer .nav-menu.mobile ul li .menu-item-wrapper,
 #footer .nav-menu.mobile ul ul li .menu-item-wrapper { border-bottom: 1px solid rgba(255,255,255,0.15); }
-#footer .nav-menu.mobile > div > ul > li:first-child .menu-item-wrapper { border-top: 1px solid rgba(255,255,255,0.15); }
 #footer .nav-menu.mobile ul button,
 #footer .nav-menu.mobile ul ul button { border-left: 1px solid rgba(255,255,255,0.15); }
+#footer .nav-menu.mobile > div > ul { border-top: 1px solid rgba(255,255,255,0.15); }
 #footer .nav-menu .svg-icon { fill: #fff; }
 #footer .menu-toggle-icon span { background: #fff; }
 #footer { border-top: 0; }
