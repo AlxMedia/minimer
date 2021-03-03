@@ -90,15 +90,17 @@ add_action( 'after_setup_theme', 'minimer_setup' );
 
 /*  Custom navigation
 /* ------------------------------------ */
-require_once 'functions/nav.php';
-$nav = new \AlxMedia\Nav();
-$nav->enqueue(
-	[
-		'script' => 'js/nav.js',
-		'inline' => false,
-	]
-);
-$nav->init();
+add_action( 'wp', function() {
+	require_once 'functions/nav.php';
+	$nav = new \Minimer\Nav();
+	$nav->enqueue(
+		[
+			'script' => 'js/nav.js',
+			'inline' => false,
+		]
+	);
+	$nav->init();
+} );
 
 
 /*  Custom logo
