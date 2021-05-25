@@ -75,6 +75,9 @@ Sidebar images
 
 == Changelog ==
 
+= 1.3.1 - 2021-05-25 =
+* Updated language files
+
 = 1.3.0 - 2021-05-25 =
 * Fixed compatibility issue with custom nav and various security plugins
 
