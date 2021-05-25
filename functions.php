@@ -90,8 +90,10 @@ add_action( 'after_setup_theme', 'minimer_setup' );
 
 /*  Custom navigation
 /* ------------------------------------ */
-add_action( 'wp', function() {
+if ( ! class_exists( '\Minimer\Nav' ) ) {
 	require_once 'functions/nav.php';
+}
+add_action( 'wp', function() {
 	$nav = new \Minimer\Nav();
 	$nav->enqueue(
 		[
