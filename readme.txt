@@ -8,7 +8,7 @@ Tags: blog, news, entertainment, one-column, two-columns, right-sidebar, left-si
 
 == Description ==
 
-Minimer is a flexible personal blog theme with plenty of options. Optimized for all devices, this theme will stand out with a unique slanted sidebar including profile image, name and description. It also includes a featured posts carousel that can be enabled. Set the theme to any width and boxed style if you so wish. Use a sidebar to the left or right, set it to any color you want, or disable it entirely for a more clean look. Demo: http://demo.alx.media/x/?theme=Minimer
+Minimer is a flexible personal blog theme with plenty of options. Optimized for all devices, this theme will stand out with a unique slanted sidebar including profile image, name and description. It also includes a featured posts carousel that can be enabled. Set the theme to any width and boxed style if you so wish. Use a sidebar to the left or right, set it to any color you want, or disable it entirely for a more clean look. Demo: https://demo.agnarson.com/?theme=Minimer
 
 == Installation ==
 
@@ -19,7 +19,7 @@ Minimer is a flexible personal blog theme with plenty of options. Optimized for 
 
 == Documentation ==
 
-http://alx.media/documentation/
+https://agnarson.com/documentation/
 
 == Copyright ==
 
